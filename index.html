@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mysterious Thinker — Demo App</title>
+  <style>
+    body{font-family:Inter,Segoe UI,Arial;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:#0b1220;color:#f5f7fb}
+    .card{max-width:720px;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+    h1{margin:0 0 12px;font-size:26px}
+    p{margin:6px 0 0}
+    a.btn{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:8px;background:#1f8feb;color:white;text-decoration:none}
+    small{display:block;margin-top:10px;color:#adb6c7}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Mysterious Thinker — Azure App Service Demo</h1>
+    <p>Congrats! This site is hosted on Azure App Service.</p>
+    <a class="btn" href="https://portal.azure.com" target="_blank">Open Azure Portal</a>
+    <small>Show this URL to clients as a deployed example: <strong id="url"></strong></small>
+  </div>
+
+  <script>
+    document.getElementById('url').textContent = window.location.hostname;
+  </script>
+</body>
+</html>
